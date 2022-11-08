@@ -1,0 +1,17 @@
+/home/schnitzel/Coding/C#/Tetris/Tetris/bin/Debug/Tetris.exe
+/home/schnitzel/Coding/C#/Tetris/Tetris/bin/Debug/Tetris.pdb
+/home/schnitzel/Coding/C#/Tetris/Tetris/obj/Debug/Tetris.csproj.AssemblyReference.cache
+/home/schnitzel/Coding/C#/Tetris/Tetris/obj/Debug/Tetris.csproj.CoreCompileInputs.cache
+/home/schnitzel/Coding/C#/Tetris/Tetris/obj/Debug/Tetris.exe
+/home/schnitzel/Coding/C#/Tetris/Tetris/obj/Debug/Tetris.pdb
+/home/schnitzel/Coding/C#/Tetris/Tetris/bin/Debug/se_game_double.wav
+/home/schnitzel/Coding/C#/Tetris/Tetris/bin/Debug/se_game_harddrop.wav
+/home/schnitzel/Coding/C#/Tetris/Tetris/bin/Debug/se_game_hold.wav
+/home/schnitzel/Coding/C#/Tetris/Tetris/bin/Debug/se_game_move.wav
+/home/schnitzel/Coding/C#/Tetris/Tetris/bin/Debug/se_game_rotate.wav
+/home/schnitzel/Coding/C#/Tetris/Tetris/bin/Debug/se_game_single.wav
+/home/schnitzel/Coding/C#/Tetris/Tetris/bin/Debug/se_game_softdrop.wav
+/home/schnitzel/Coding/C#/Tetris/Tetris/bin/Debug/se_game_tetris.wav
+/home/schnitzel/Coding/C#/Tetris/Tetris/bin/Debug/se_game_triple.wav
+/home/schnitzel/Coding/C#/Tetris/Tetris/bin/Debug/theme.wav
+/home/schnitzel/Coding/C#/Tetris/Tetris/obj/Debug/Tetris.csproj.CopyComplete
