@@ -1017,11 +1017,12 @@ namespace Tetris
                 Console.Write("GAME OVER"[i]);
             }
             
+            theme.Stop();
             Console.ResetColor();
             Console.CursorVisible = true;
             Console.SetCursorPosition(0, bottomPlayingField + 2);
             Console.WriteLine("Enter anything to close the program.");
-            Thread.Sleep(1000);
+            Thread.Sleep(3000);
             Console.ReadKey(true);
         }
     }
