@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Tracing;
 using System.Media;
 using System.Threading;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Media;
 
 namespace Tetris
 {
@@ -13,42 +9,42 @@ namespace Tetris
     {
         public Tetromino()
         {
-            position = new int[4, 2];
+            _position = new int[4, 2];
         }
 
         public Tetromino(Tetromino original)
         {
-            position = new int[4, 2];
+            _position = new int[4, 2];
             Color = original.Color;
             RotationState = original.RotationState;
             for (int i = 0; i < 4; i++)
             {
-                position[i, 0] = original.position[i, 0];
-                position[i, 1] = original.position[i, 1];
+                _position[i, 0] = original._position[i, 0];
+                _position[i, 1] = original._position[i, 1];
             }
         }
 
-        private int[,] position;
+        private int[,] _position;
         
         public int[,] Position
         {
-            get => position;
+            get => _position;
 
             set
             {
                 if (value == null)
                 {
-                    position = null;
+                    _position = null;
                 }
 
                 else
                 {
-                    position = new int[value.GetLength(0),value.GetLength(1)];
+                    _position = new int[value.GetLength(0),value.GetLength(1)];
                     
                     for (int i = 0; i < 4; i++)
                     {
-                        position[i, 0] = value[i, 0];
-                        position[i, 1] = value[i, 1];
+                        _position[i, 0] = value[i, 0];
+                        _position[i, 1] = value[i, 1];
                     }
                 }
             }
@@ -759,18 +755,12 @@ namespace Tetris
                     }
                 }
 
-                if (secondCount >= 200)
+                framesPerLine = secondCount switch
                 {
-                    framesPerLine = 15;
-                }
-                else if(secondCount >= 60)
-                {
-                    framesPerLine = 60 - 10 * (secondCount - 60) / 31;
-                }
-                else
-                {
-                    framesPerLine = 60 + (secondCount - 60) * (secondCount - 60) / 90;
-                }
+                    >= 200 => 15,
+                    >= 60 => 60 - 10 * (secondCount - 60) / 31,
+                    _ => 60 + (secondCount - 60) * (secondCount - 60) / 90
+                };
 
                 softDropping = false;
 
